@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var mobilenumber= document.getElementById('mobilenumber').value;
+if(mobilenumber=='/^[7-9][0-9]{9}$/')
+{
+return true;
+}
+else
+{
+alert('enter a valid number');
+return false;
+}
+}
+</script></head>
+<body>
+<form action="submission.html" onsubmit="return validate()">
+<input type="number" placeholder="mobilenumber" id="mobilenumber">
+<button type="submit">submit</button>
+</form></body></html>

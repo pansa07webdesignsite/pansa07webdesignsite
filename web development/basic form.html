@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>~ASSIGNMENT~</title>
+<h1 style="color:blue;text-align:center;onblur:purple;onfocus:yellow;background-color:pink">THIS IS MY ASSIGNMENT</h1>
+<img src="webpage.jpeg" height="50%" width="50%" border="40px"  style="float:circle;border-color:oranges"><br><br>
+<script type="text/javascript">
+function check_info()
+{
+var username= document.getElementById('username').value;
+if(username=="")
+{
+alert('Please fill in all the details');
+return false;
+}
+else
+{
+return true;
+}
+}
+function validator()
+{
+if(document.getElementById('thebox').checked)
+{
+return true;
+}
+else
+{
+alert('You better check the box');
+}
+}
+</script>
+</head>
+<body style="background:rgb(128,255,255)">
+<p style="color:red;font-size:200%;text-align:center;text-decoration:absolute;background-color:yellow"><strong><i><u>FILL IN THE FOLLOWING DETAILS OF THE FORM~~</u></i></strong></P>
+<form align="center" action="submission.html" method="post" onsubmit="return check_info()">
+<input type="text" placeholder="FIRST NAME" id="username" ><br> <BR>
+<input type="text" placeholder="LAST NAME"><br><br>
+<input type="password" placeholder="PASSWORD" required><br><br>
+<input type="email" placeholder="EMAIL ADDRESS" id="emailaddress" required><br><br>
+<input type="number" placeholder="MOBILE NUMBER" id="mobilenumber"><br><br>
+CHOOSE YOUR FAVORITE COLOR:
+<input type="color"><br><br>
+CHOOSE YOUR FAVORITE FOOD ITEM:<br>
+<input type="radio" name="food">TACOS<br>
+<input type="radio" name="food">BURGER<br>
+<input type="radio" name="food">PIZZA<br>
+<input type="radio" name="food">SANDWICH<br><br>
+SELECT YOUR COUNTRY!
+<select>
+<option>INDIA</option><option>CHINA</option><option>NEPAL</option><option>USA</option>
+</select><br><br>
+SELECT YOUR LUCKY NUMBER(from 0-9):<br>
+<input type="range" name="satisfaction" min='0' max='9' value="5"><br><br>
+<input type="checkbox" id="thebox">
+<button type="press me" onclick="validator()"> I AGREE TO ALL THE INFORMAATION </button><br><br>
+<button type="reset">RESET</button>
+<button type="submit">SUBMIT<BR><br>
+
+</form>
+</body>
+</html>
